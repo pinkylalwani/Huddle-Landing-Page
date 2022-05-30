@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size:1.125rem;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url('images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+img{
+    width: 100%;
+    height:auto;
+}
+header{
+    padding:2rem 0;
+    padding-left:2.5rem;
+}
+.logo{
+    max-width:120px;
+}
+section{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding: 1.5rem 2.5rem;
+}
+.content{
+    text-align:center;
+    padding: 1.5rem 0;
+    color: #fff;
+    line-height: 1.5;
+}
+h1{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+p{
+    padding-bottom: 1.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size:1rem ;
+}
+button{
+    width:100%;
+    max-width: 220px;
+    border: 1px solid transparent;
+    border-radius:50px;
+    padding:12px 20px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #7F4DC1;
+    letter-spacing:1px;
+}
+.social-links{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:row;
+}
+.fa-brands{
+    padding:4px;
+    color: #fff;
+    border: 1px solid #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-left: .75rem;
+    font-size: 1rem;
+}
+.fa-brands:hover{
+    color:hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+button a:hover{
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    body{
+        background-image: url('images/bg-desktop.svg');
+    }
+    section{
+        display: flex;
+        flex-direction: row;
+    }
+    .left-side{
+        flex: 3;
+    }
+    .content{
+        flex: 2;
+        margin-left: 2rem;
+        text-align:left;
+    }
+    h1{
+        font-size: 2.5rem;
+
+    }
+    .social-links{
+        justify-content: flex-end;
+    }
+}
+    
